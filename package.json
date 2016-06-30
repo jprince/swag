@@ -4,7 +4,6 @@
   "description": "A tool for relatively-sizing units of work",
   "repository": "https://github.com/jprince/swag",
   "scripts": {
-    "build": "babel src -d app --watch",
     "bundle": "webpack app/main.js dist/main.bundle.js --config webpack.config.js -d --watch",
     "lite": "lite-server",
     "start": "npm run lite"

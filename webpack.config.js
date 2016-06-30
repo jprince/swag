@@ -1,16 +1,22 @@
 'use strict';
+var path = require('path');
 
 module.exports = {
-  devtool: 'source-map',
+  entry: [
+    './app/main'
+  ],
   module: {
     loaders: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
         loader: 'babel',
+        include: [
+          path.resolve(__dirname, 'app')
+        ],
         query: {
+          plugins: ['transform-decorators-legacy'],
           presets: ['es2015', 'angular2']
-        }
+        },
+        test: /\.js$/
       }
     ]
   }
