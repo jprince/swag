@@ -15,6 +15,19 @@ Once npm is installed, use it to install the application dependencies:
 $ npm install
 ```
 
+### Create the bundle file
+Run the following commands from the root directory of the project:
+```sh
+$ mkdir dist
+$ cd dist
+$ touch main.bundle.js
+$ npm run bundle
+```
+
+This will create the bundle file that Webpack will use in subsequent steps to transpile the source.
+
+This file is not checked-in, since it is auto-generated based on the files in the app directory, which is checked-in.
+
 ### Transpile Code
 This application uses the ES6 version of Javascript. Since many of its features are not yet
 supported by modern browsers, we need to compile it down to ES5. To do this we use [Babel][babel].
@@ -41,7 +54,7 @@ You can start the server by running npm start:
 $ npm start
 ```
 
-This should launch the application at `http://localhost:3001/`.
+This should launch the application at `http://localhost:3000/`.
 
 [babel]: https://babeljs.io/
 [npm]: https://www.npmjs.org/
