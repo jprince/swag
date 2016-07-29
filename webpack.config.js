@@ -6,13 +6,16 @@ module.exports = {
   module: {
     loaders: [
       {
-        loader: 'babel',
+        loader: [
+          'babel?presets[]=es2015,presets[]=es2015,presets[]=angular2,plugins[]=transform-decorators-legacy',
+          'angular2-template-loader'
+        ],
         include: [path.resolve(__dirname, 'app')],
-        query: {
-          plugins: ['transform-decorators-legacy'],
-          presets: ['es2015', 'angular2']
-        },
         test: /\.js$/
+      },
+      {
+        loader: 'raw-loader',
+        test: /\.html$/
       }
     ]
   }
