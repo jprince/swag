@@ -7,7 +7,7 @@ module.exports = {
     loaders: [
       {
         loader: [
-          'babel?presets[]=es2015,presets[]=es2015,presets[]=angular2,plugins[]=transform-decorators-legacy',
+          'babel?presets[]=es2015,presets[]=angular2,plugins[]=angular2-annotations,plugins[]=transform-decorators-legacy,plugins[]=transform-flow-strip-types',
           'angular2-template-loader'
         ],
         include: [path.resolve(__dirname, 'app')],
