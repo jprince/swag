@@ -1,4 +1,9 @@
 <div>
-  <span>{{ tickets | async }}</span>
-  <ticket></ticket>
+  <ul>
+    <li *ngFor="let ticket of tickets | async">
+      <div>
+        {{ ticket.key }} ({{ ticket.fields.issuetype.name }}) - {{ ticket.fields.summary }}
+      </div>
+    </li>
+  </ul>
 </div>
