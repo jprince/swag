@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { TicketListComponent } from './tickets/ticket-list.component';
 
 @Component({
+  directives: [TicketListComponent],
   selector: 'my-app',
-  template: '<h1>SWAG</h1>'
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent {}
