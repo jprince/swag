@@ -46,6 +46,14 @@ $ npm run bundle
 By default, this task is configured to watch for changes to the files, so you shouldn't need to
 rerun it in development.
 
+### Set Environment Variables
+In order to connect to the JIRA API, you'll need to use your credentials. To do so, create a new file, in the root directory, named `.env`. In that file, define the following variables:
+
+```
+JIRA_USERNAME=first.last
+JIRA_PASSWORD=mypassword
+```
+
 ### Run the Application
 
 You can start the server by running npm start:

@@ -2,7 +2,7 @@
 var path = require('path');
 
 module.exports = {
-  entry: './app/main',
+  entry: './client/app/main',
   module: {
     loaders: [
       {
@@ -10,7 +10,7 @@ module.exports = {
           'babel?presets[]=es2015,presets[]=angular2,plugins[]=angular2-annotations,plugins[]=transform-decorators-legacy,plugins[]=transform-flow-strip-types',
           'angular2-template-loader'
         ],
-        include: [path.resolve(__dirname, 'app')],
+        include: [path.resolve(__dirname, 'client/app')],
         test: /\.js$/
       },
       {

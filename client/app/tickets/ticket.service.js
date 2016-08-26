@@ -11,8 +11,8 @@ export class TicketService {
 
   getTickets() {
     return this._http
-      .get('./api/tickets.json')
-      .map((response) => response.json().issues)
+      .get('/api/tickets')
+      .map((response) => response.json())
       .catch(this.handleError);
   }
 
