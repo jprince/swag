@@ -24,7 +24,17 @@ $ npm run bundle
 
 This will create the bundle file that Webpack will use in subsequent steps to transpile the source.
 
-This file is not checked-in, since it is auto-generated based on the files in the app directory, which is checked-in.
+This file is not checked-in, since it is auto-generated based on the files in the app directory,
+which is checked-in.
+
+### Set Environment Variables
+In order to connect to the JIRA API, you'll need to use your credentials. To do so, create a new
+file, in the root directory, named `.env`. In that file, define the following variables:
+
+```
+JIRA_USERNAME=first.last
+JIRA_PASSWORD=mypassword
+```
 
 ### Transpile Code
 This application uses the ES6 version of Javascript. Since many of its features are not yet
@@ -42,15 +52,7 @@ $ npm run bundle
 ```
 
 By default, this task is configured to watch for changes to the files, so you shouldn't need to
-rerun it in development.
-
-### Set Environment Variables
-In order to connect to the JIRA API, you'll need to use your credentials. To do so, create a new file, in the root directory, named `.env`. In that file, define the following variables:
-
-```
-JIRA_USERNAME=first.last
-JIRA_PASSWORD=mypassword
-```
+rerun it.
 
 ### Run the Application
 
@@ -74,6 +76,14 @@ $ npm run browsersync
 ```
 
 This should launch the application, with Browsersync running, at `http://localhost:4000/`.
+
+### Development Mode
+For simplicity, there is a single command to start Webpack's bundle, the server, and Browsersync,
+in development. To do so, run the following command:
+
+```sh
+$ npm run development
+```
 
 [babel]: https://babeljs.io/
 [browsersync]: https://www.browsersync.io/

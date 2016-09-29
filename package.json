@@ -6,6 +6,7 @@
   "scripts": {
     "browsersync": "browser-sync start -c bs-config.json",
     "bundle": "webpack client/app/main.js dist/main.bundle.js --config webpack.config.js -d --w",
+    "development": "npm run bundle & npm run start & npm run browsersync",
     "start": "node server/app.js"
   },
   "author": "Josh Prince",
