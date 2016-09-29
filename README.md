@@ -64,6 +64,20 @@ $ npm start
 
 This should launch the application at `http://localhost:3000/`.
 
+### Using Browsersync in Development
+[Browsersync][browsersync] is a tool that will keep your browser in-sync with your local code. It's
+helpful in development, because it allows you to view your changes without constantly refreshing
+the browser.
+
+To use Browsersync, run the following command after starting your server:
+
+```sh
+$ npm run browsersync
+```
+
+This should launch the application, with Browsersync running, at `http://localhost:4000/`.
+
 [babel]: https://babeljs.io/
+[browsersync]: https://www.browsersync.io/
 [npm]: https://www.npmjs.org/
 [webpack]: https://webpack.github.io/

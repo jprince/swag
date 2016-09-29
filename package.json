@@ -4,6 +4,7 @@
   "description": "A tool for relatively-sizing units of work",
   "repository": "https://github.com/jprince/swag",
   "scripts": {
+    "browsersync": "browser-sync start -c bs-config.json",
     "bundle": "webpack client/app/main.js dist/main.bundle.js --config webpack.config.js -d --w",
     "start": "node server/app.js"
   },
@@ -37,8 +38,8 @@
     "babel-plugin-transform-decorators": "^6.8.0",
     "babel-preset-angular2": "0.0.2",
     "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.16.0",
     "concurrently": "^2.0.0",
-    "lite-server": "^2.2.0",
     "raw-loader": "0.5.1",
     "webpack": "^2.1.0-beta.20"
   }
