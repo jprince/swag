@@ -1,6 +1,6 @@
 <div>
   <ul>
-    <li *ngFor="let ticket of tickets | async">
+    <li *ngFor="let ticket of tickets | async | forStoryPoint: selectedStoryPoint">
       <div>
         {{ ticket.key }} ({{ ticket.fields.issuetype.name }}) - {{ ticket.fields.summary }}
       </div>
