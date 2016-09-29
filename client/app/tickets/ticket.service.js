@@ -1,4 +1,3 @@
-// https://jira.arcadiasolutions.com/rest/api/latest/search?jql=filter=13934&fields=customfield_10002,issuetype,key,summary&maxResults=1000
 import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
