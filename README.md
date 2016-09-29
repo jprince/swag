@@ -18,9 +18,7 @@ $ npm install
 ### Create the bundle file
 Run the following commands from the root directory of the project:
 ```sh
-$ mkdir dist
-$ cd dist
-$ touch main.bundle.js
+$ touch dist/main.bundle.js
 $ npm run bundle
 ```
 
